@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+body,
+h1,
+ul,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "メイリオ", "Meiryo", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header .lavel {
+    background-color: rgb(40, 8, 114);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 上下の高さをそろえる */
+    padding: 20px 20px;
+    /* 余白をつける */
+}
+
+.menu-content {
+    display: none;
+    /* 最初は隠す */
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: absolute;
+    /* 上に重なるように */
+    top: 50px;
+    /* ボタンの下に表示 */
+    left: 0;
+}
+
+.menu-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+header nav ul {
+    gap: 20px;
+    /* メニュー間の間隔 */
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li:nth-child(2) a {
+    color: black;
+}
+
+nav ul li:nth-child(3) a {
+    color: black;
+}
+
+nav ul li:nth-child(4) a {
+    color: black;
+}
+
+nav ul li:last-child a {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li:nth-child(2) a:hover {
+    color: red;
+}
+
+nav ul li:nth-child(3) a:hover {
+    color: red;
+}
+
+nav ul li:nth-child(4) a:hover {
+    color: red;
+}
+
+nav ul li:last-child a:hover {
+    color: red;
+}
+
+.top img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.concept-block,
+.news ul {
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text {
+    margin: 0px 20px;
+}
+
+.concept h2,
+.information h2,
+.access_map h2,
+.Item h2 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    background-color: rgb(87, 54, 1);
+    max-width: none;
+    height: auto;
+}
+
+
+.concept-block {
+    margin-bottom: 12px;
+}
+
+.inner h3 {
+    background-color: rgb(87, 54, 1);
+}
+
+.item_list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_block {
+     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;  
+    margin: 0 auto;    
+}
+
+@media screen and (max-width: 768px) {
+    .item_block {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .menu_item {
+        width: 90%;
+        max-width: 350px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        border: none;
+    }
+
+    .menu_item img, .menu_item .text {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.item_block.item_list:nth-of-type(2).menu_item {
+    border-bottom: none;
+}
+
+.menu_item {
+     flex: 1 1 45%;     
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+}
+
+.item_block.list2.item_list:nth-of-type(2).menu_item {
+    border-bottom: none;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.information_text p {
+    width: 45%;
+    /*背景画像の幅が1620*/
+    margin-right: auto;
+    /* 真ん中に寄せるおまじない */
+    margin-left: auto;
+}
+
+.access_map .map {
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+iframe[src*="www.google.com/maps/embed"] {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    border-bottom: 2px dashed white;
+    font-size: 30px;
+    /* solid実践、dashed破線 */
+    margin-bottom: 50px;
+    margin-right: auto;
+}
+
+.formtitle h2 {
+    margin-top: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 120px;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(40, 8, 114);
+    line-height: 3;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.credit {
+    font-size: 10px;
+    color: #666;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    text-align: left;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+    .item_block,
+    .menu_item,
+    img,
+    p,
+    h2,
+    h3 {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
